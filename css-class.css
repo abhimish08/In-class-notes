@@ -1,0 +1,108 @@
+/*table tr td,table tr th
+{
+    text-align: right;
+    
+}
+table tbody tr td:first-child 
+{  
+    border: 1px solid red;
+}
+table tr:nth-child(2)
+{
+    background-color: antiquewhite;
+}
+table tbody tr:nth-child(2n)
+{
+    background-color: aqua;
+}
+table tbody tr:nth-child(2n+1)
+{
+    background-color:yellow;
+}
+
+table tbody tr td:nth-child(2)::before{
+    content: "Hello";
+}*/
+/*table styles fro div tag*/
+.table
+{
+    display:table;
+    border:1px solid black;
+    
+}
+.row
+{
+    display:table-row;
+}
+.th
+{
+    display:table-cell;
+    border :1px solid red;
+    padding:25px;
+    margin: 20px;
+}
+.td
+{
+    display:table-cell;
+    border :1px solid red;
+    padding:25px;
+    margin: 20px;
+}
+.th{
+    font-weight: bold;
+}
+[id="last-cell"]
+{
+    color:blue;
+}
+[data-columns="table-data"]
+{
+    color:blue;
+}
+[id]
+{
+    background-color: black;
+}
+[data-column="table-data"]
+{
+    /*check with exact value*/
+    color:blue;/*works*/
+}
+[data-column*="table-"]
+{
+    /*check if attribute exists anywhere*/
+    background-color:red;/*works*/
+}
+.table img[alt~="off"]
+{
+    /*check if attribute exists space separated*/
+    background-color :orchid;/*works*/
+}
+.table img[alt^="pissed"]
+{
+    /*check if attribute starts with*/
+    box-shadow: 5px 5px 50px green;/*works*/
+}
+[data-column|="table"]
+{/*check if conatins table dash separated*/
+    font-weight:bolder;/*works*/
+}
+
+[data-column$="data"]
+{/*check if conatins table ends with this*/
+    font-family: cursive;/*works*/
+}
+.content
+{
+    border:10px solid blue;
+    padding:10px 20px 30px 40px;
+    margin:25px;
+    width: fit-content;
+}
+/*.container
+{
+    border-left: 10px solid blue;/*ask doubt he put inside container the content
+    padding:10px 20px 30px 40px;
+    margin:25px;
+    width: fit-content;
+}*/
